@@ -3,40 +3,72 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS2</title>
+    <title>Sandbox</title>
     <style>
         body {
             background-color: #c0c0c0;
             width: 30%;
             font-family: sans-serif;
         }
+        .fono-spalva-sarminiams {
+            background-color: rgb(0, 136, 221);
+        }
+        .fono-spalva-neutraliam {
+            background-color: rgb(0, 187, 136);
+        }
+        .fono-spalva-rugstiniams {
+            background-color: rgb(238, 62, 128);
+        }
         h1 {
             color: #64645a;
             padding: 20px;
+            background-color: #dfdfdf;
+        }
+        .opacity-90 {
+            background-color: rgb(255, 255, 255, 0.1);
+        }
+        .opacity-80 {
+            background-color: rgb(255, 255, 255, 0.2);
+        }
+        .opacity-70 {
+            background-color: rgb(255, 255, 255, 0.3);
+        }
+        .opacity-60 {
+            background-color: rgb(255, 255, 255, 0.4);
+        }
+        .opacity-50 {
+            background-color: rgb(255, 255, 255, 0.5);
+        }
+        .opacity-40 {
+            background-color: rgb(255, 255, 255, 0.6);
         }
         p {
             color: #fce5ee;
-            margin: -1px 0 0 0;
+            margin: 0px 0 0px 0;
             padding: 5px;
         }
     </style>
 </head>
 <body>
-    <h1 style="background-color: #dfdfdf">pH skalė</h1>
-    <p style="background-color: #0088dd">14.0 ŠARMINIS</p>
-    <p style="background-color: #0095e2">13.0</p>
-    <p style="background-color: #00a0e6">12.0</p>
-    <p style="background-color: #30aae9">11.0</p>
-    <p style="background-color: #54b6ed">10.0</p>
-    <p style="background-color: #72c1f0">9.0</p>
-    <p style="background-color: #8ccaf2">8.0</p>
-    <p style="background-color: #00bb88">7.0 NEUTRALUS</p>
-    <p style="background-color: #f5b0cc">6.0</p>
-    <p style="background-color: #f69fc0">5.0</p>
-    <p style="background-color: #f58cb2">4.0</p>
-    <p style="background-color: #f47ba6">3.0</p>
-    <p style="background-color: #f36a98">2.0</p>
-    <p style="background-color: #f45a8b">1.0</p>
-    <p style="background-color: #ee3e80">0.0 RŪGŠTINIS</p>
+    <h1>pH skalė</h1>
+    <div class="fono-spalva-sarminiams">
+        <p>14.0 ŠARMINIS</p>
+        <p class="opacity-90">13.0</p>
+        <p class="opacity-80">12.0</p>
+        <p class="opacity-70">11.0</p>
+        <p class="opacity-60">10.0</p>
+        <p class="opacity-50">9.0</p>
+        <p class="opacity-40">8.0</p>
+    </div>
+    <p class="fono-spalva-neutraliam">7.0 NEUTRALUS</p>
+    <div class="fono-spalva-rugstiniams">
+        <p class="opacity-40">6.0</p>
+        <p class="opacity-50">5.0</p>
+        <p class="opacity-60">4.0</p>
+        <p class="opacity-70">3.0</p>
+        <p class="opacity-80">2.0</p>
+        <p class="opacity-90">1.0</p>
+        <p>0.0 RŪGŠTINIS</p>
+    </div>
 </body>
 </html>
