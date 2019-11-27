@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS9</title>
+    <style>
+        .pagrindinis-konteineris {
+            display: flex;
+            justify-content: center;
+            background-color: #f7f7ed;
+            padding: 10px 0;
+            font-family: sans-serif;
+        }
+        .prekes-nuoroda {
+            text-decoration: none;
+            color: inherit;
+        }
+        .prekes-konteineris {
+            width: 210px;
+            padding: 70px 20px 20px 20px;
+            margin: 0 10px;
+            background-color: white;
+            border-radius: 8px;
+        }
+        .prekes-konteineris:hover {
+            box-shadow: 4px 4px 4px #6591b9;
+        }
+        .prekes-nuotraukos-konteineris {
+            overflow: hidden;
+        }
+        .prekes-nuotrauka {
+            width: 300px;
+            margin-left: -50px;
+        }
+        .prekes-pavadinimas {
+            margin: 30px 0;
+            font-size: 21px;
+            color: #3955b4;
+        }
+        .prekes-specifikacija {
+            margin-bottom: 60px;
+        }
+        .prekes-specifikacija span {
+            margin-bottom: 2px;
+            display: block;
+            font-size: 19px;
+            color: #282c33;
+            height: 23px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .akcija {
+            margin-bottom: 5px;
+            font-size: 35px;
+            color: #383a3d;
+        }
+        .sena-kaina {
+            font-size: 20px;
+            text-decoration: line-through;
+            color: gray;
+        }
+        .uzsakymo-mygtuko-konteineris {
+            margin: 0 0 20px 0;
+        }
+        .uzsakymo-mygtukas {
+            background-color: #9ede3f;
+            color: white;
+            border-radius: 3px;
+            padding: 10px 20px;
+            font-size: 22px;
+            line-height: 45px;
+        }
+        .atlyginimas-autoriams {
+            font-size: 15px;
+            color: grey;
+        }
+    </style>
+</head>
+<body>
+    <div class="pagrindinis-konteineris">
+        <a href="#" class="prekes-nuoroda">
+            <div class="prekes-konteineris">
+                <div class="prekes-nuotraukos-konteineris">
+                    <img src="images/css_9_computers_1.jpg" class="prekes-nuotrauka" alt="Nešiojamas kompiuteris ASUS">
+                </div>
+                <div class="prekes-pavadinimas">Nešiojamas kompiuteris ASUS K540NA</div>
+                <div class="prekes-specifikacija">
+                    <span>Atmintinė (RAM) (GB): 4</span>
+                    <span>Įstrižainė: 15.6" (39,6 centimetrai)</span>
+                </div>
+                <div class="akcija">259,00 &euro;</div>
+                <div class="sena-kaina">359,00 &euro;</div>
+                <div class="uzsakymo-mygtuko-konteineris">
+                    <span class="uzsakymo-mygtukas">Užsakyti</span>
+                </div>
+                <div class="atlyginimas-autoriams">+ 7,01 &euro; Kompensacinis atlyginimas autoriams</div>
+            </div>
+        </a>
+        <a href="#" class="prekes-nuoroda">
+            <div class="prekes-konteineris">
+                <div class="prekes-nuotraukos-konteineris">
+                    <img src="images/css_9_computers_3.jpg" class="prekes-nuotrauka" alt="Nešiojamas kompiuteris Lenovo" >
+                </div>
+                <div class="prekes-pavadinimas">Nešiojamas kompiuteris LENOVO V110-15IAP</div>
+                <div class="prekes-specifikacija">
+                    <span>Atmintinė (RAM) (GB): 16</span>
+                    <span>Įstrižainė: 15.6" (~39,6 centimetrai)</span>
+                </div>
+                <div class="akcija">199,99 &euro;</div>
+                <div class="sena-kaina">349,99 &euro;</div>
+                <div class="uzsakymo-mygtuko-konteineris">
+                    <span class="uzsakymo-mygtukas">Užsakyti</span>
+                </div>
+                <div class="atlyginimas-autoriams">+ 7,01 &euro; Kompensacinis atlyginimas autoriams</div>
+            </div>
+        </a>
+        <a href="#" class="prekes-nuoroda">
+            <div class="prekes-konteineris">
+                <div class="prekes-nuotraukos-konteineris">
+                    <img src="images/css_9_computers_2.jpg" class="prekes-nuotrauka" alt="Nešiojamas kompiuteris DELL">
+                </div>
+                <div class="prekes-pavadinimas">Nešiojamas kompiuteris DELL Inspiron 15 3573</div>
+                <div class="prekes-specifikacija">
+                    <span>Atmintinė (RAM) (GB): 16</span>
+                    <span>Įstrižainė: 15.6" (39,6 centimetrai)</span>
+                </div>
+                <div class="akcija">299,00 &euro;</div>
+                <div class="sena-kaina">399,00 &euro;</div>
+                <div class="uzsakymo-mygtuko-konteineris">
+                    <span class="uzsakymo-mygtukas">Užsakyti</span>
+                </div>
+                <div class="atlyginimas-autoriams">+ 7,01 &euro; Kompensacinis atlyginimas autoriams</div>
+            </div>
+        </a>
+    </div>
+</body>
+</html>
