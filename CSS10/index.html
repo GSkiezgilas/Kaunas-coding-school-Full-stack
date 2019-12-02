@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS10</title>
+    <style>
+        /* reseting values */
+        body {
+            border: 0;
+            padding: 0;
+            margin: 0;
+        }
+        /* END of reseting */
+        .pagrindinis-konteineris {
+            width: 100%;
+            margin: auto;
+            color: #414141;
+            position: relative;
+        }
+        .pagrindinis-meniu {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-flow: column;
+            background-color: #414141;
+        }
+        .pagrindinis-meniu li {
+            margin: auto;
+            padding: 5px 20px;
+            width: 60%;
+            font-size: 18px;
+            text-align: center;
+        }
+        .pagrindinis-meniu a {
+            text-decoration: none;
+            color: white;
+        }
+        .pagrindinis-meniu li:hover {
+            background-color: #365675;
+        }
+        h1 {
+            text-align: center;
+        }
+        h3 {
+            margin: 5px 5px 2px 5px;
+            padding: 2px 5px;
+            width: 100%;
+            background-color: #414141;
+            color: white;
+        }
+        .section {
+            display: flex;
+            flex-flow: row wrap;
+        }
+       .pirmo-straipsnio-konteineris, .pusiniu-straipsniu-konteineriai {
+           margin: 5px;
+           width: 100%;
+           display: flex;
+           flex-flow: row wrap;
+           border: 1px solid #414141;
+        }
+        .pirma-antraste {
+            margin: 10px 0 10px 10px;
+            width: 100%;
+        }
+        .pirmo-straipsnio-nuotraukos-konteineris, .straipsnio-nuotraukos-konteineris {
+            margin: 0 0 10px 10px;
+            width: 150px;
+            overflow: hidden;
+        }
+        .nuotrauka {
+            margin-left: -25px;
+        }
+        .straipsnio-seselis:hover {
+            box-shadow: 3px 3px 3px #365675;
+        }
+        .pirmas-straipsnis, .straipsnis {
+            margin: 0 0 10px 10px;
+            width: calc(100% - 174px);
+        }
+        .antraste {
+            margin: 10px 0 10px 10px;
+            width: 100%;
+        }
+        .banerio-konteineris {
+            margin: 10px 5px;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+            background-color: #365675;
+        }
+        footer {
+            margin: auto;
+            padding: 5px;
+            width: calc(100% - 18px);
+            color: white;
+            background-color: #414141;
+        }
+        address a {
+            color: lightblue;
+        }
+        @media screen and (min-width: 600px) {
+            .pagrindinis-meniu {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                flex-flow: row nowrap;
+                justify-content: flex-end;
+            }
+            .pagrindinis-meniu li {
+                width: 15%;
+                padding: 5px 20px;
+                font-size: 18px;
+                margin: 0;
+                text-align: center;
+            }
+        }
+        @media screen and (min-width: 800px) {
+            .pagrindinis-konteineris {
+                width: 70%;
+                margin: auto;
+            }
+            .pagrindinis-meniu li {
+                width: 10%;
+            }
+            .pusiniu-straipsniu-konteineriai {
+                width: calc(50% - 12px);
+            }
+            .banerio-konteineris {
+                display: flex;
+                align-items: center;
+                position: absolute;
+                height: 300px;
+                width: 18%;
+                left: 100%;
+                top: 17%;
+                padding: 0 5px;
+                text-align: center;
+                max-width: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="pagrindinis-konteineris">
+        <header>
+            <nav>
+                <ul class="pagrindinis-meniu">
+                    <li><a href="#lietuvoje">Lietuvoje</a></li>
+                    <li><a href="#uzsienyje">Užsienyje</a></li>
+                    <li><a href="#sportas">Sportas</a></li>
+                </ul>
+            </nav>
+            <h1>Mano svetainė</h1>
+        </header>
+        <main>
+            <section id="lietuvoje" class="section">
+                <h3>Lietuvoje</h3>
+                <article class="pirmo-straipsnio-konteineris straipsnio-seselis">
+                    <h4 class="pirma-antraste">Pirmas straipsnis</h4>
+                    <div class="pirmo-straipsnio-nuotraukos-konteineris">
+                        <img src="images/Narkevicius.jpg" class="nuotrauka" alt="Susisiekimo ministras J. Narkevičius">
+                    </div>
+                    <p class="pirmas-straipsnis">
+                        Aliquip anim amet pariatur quorum. Doctrina nulla enim si tamen. Ex varias doctrina exercitation. Mandaremus eram fore officia anim, varias expetendis singulis. De ullamco coniunctione. Esse ita singulis. Sed quae aute o fabulas si velit quibusdam in sunt nisi, hic ad fore doctrina, de amet probant. Velit illustriora admodum aliqua admodum ut ea culpa amet do quamquam. Ab irure eram si velit quibusdam in sunt nisi, hic ad fore doctrina, de amet probant. Velit illustriora...<a href="#">Skaityti toliau</a>
+                    </p>
+                </article>
+                <article class="pusiniu-straipsniu-konteineriai straipsnio-seselis">
+                    <h4 class="antraste">Antras straipsnis</h4>
+                    <div class="straipsnio-nuotraukos-konteineris">
+                        <img src="images/sauktiniai.jpg" class="nuotrauka" alt="Kariai žygiuoja per aikštę">
+                    </div>
+                    <p  class="straipsnis">
+                        Aliquip anim amet pariatur quorum. Doctrina nulla enim si tamen. Ex varias doctrina exercitation. Mandaremus eram fore officia anim, varias expetendis singulis. De ullamco coniunctione. Esse ita singulis. Sed quae aute o fabulas...<a href="#">Skaityti toliau</a>
+                    </p>
+                </article>
+                <article class="pusiniu-straipsniu-konteineriai straipsnio-seselis">
+                    <h4 class="antraste">Trečias straipsnis</h4>
+                    <div class="straipsnio-nuotraukos-konteineris">
+                        <img src="images/sveikatos-apsaugos-ministrijos-spaudos-konferencijos-akimirka.jpg" class="nuotrauka" alt="Sveikatos apsaugos ministerijos spaudos konferencija">
+                    </div>
+                    <p class="straipsnis">
+                        Aliquip anim amet pariatur quorum. Doctrina nulla enim si tamen. Ex varias doctrina exercitation. Mandaremus eram fore officia anim, varias expetendis singulis. De ullamco coniunctione. Esse ita singulis. Sed quae aute o fabulas...<a href="#">Skaityti toliau</a>
+                    </p>
+                </article>
+            </section>
+            <div class="banerio-konteineris">
+                <aside class="baneris">Čia gali būti Jūsų reklama!</aside>
+            </div>
+            <section id="uzsienyje" class="section">
+                <h3>Užsienyje</h3>
+                <article class="pusiniu-straipsniu-konteineriai straipsnio-seselis">
+                    <h4 class="antraste">Ketvirtas straipsnis</h4>
+                    <div class="straipsnio-nuotraukos-konteineris">
+                        <img src="images/borisas-johnsonas.jpg" class="nuotrauka" alt="Borisas Johnsonas">
+                    </div>
+                    <p class="straipsnis">
+                        Aliquip anim amet pariatur quorum. Doctrina nulla enim si tamen. Ex varias doctrina exercitation. Mandaremus eram fore officia anim, varias expetendis singulis. De ullamco coniunctione. Esse ita singulis. Sed quae aute o fabulas...<a href="#">Skaityti toliau</a>
+                    </p>
+                </article>
+                <article class="pusiniu-straipsniu-konteineriai straipsnio-seselis">
+                    <h4 class="antraste">Penktas straipsnis</h4>
+                    <div class="straipsnio-nuotraukos-konteineris">
+                        <img src="images/kanada.jpg" class="nuotrauka" alt="Kanados vėliava angaus fone">
+                    </div>
+                    <p class="straipsnis">
+                        Aliquip anim amet pariatur quorum. Doctrina nulla enim si tamen. Ex varias doctrina exercitation. Mandaremus eram fore officia anim, varias expetendis singulis. De ullamco coniunctione. Esse ita singulis. Sed quae aute o fabulas...<a href="#">Skaityti toliau</a>
+                    </p>
+                </article>
+            </section>
+            <section id="sportas" class="section">
+                <h3>Sportas</h3>
+                <article class="pusiniu-straipsniu-konteineriai straipsnio-seselis">
+                    <h4 class="antraste">Šeštas straipsnis</h4>
+                    <div class="straipsnio-nuotraukos-konteineris">
+                        <img src="images/zalgiris.jpg" class="nuotrauka" alt="Zalgirio sirgaliai">
+                    </div>
+                    <p class="straipsnis">
+                        Aliquip anim amet pariatur quorum. Doctrina nulla enim si tamen. Ex varias doctrina exercitation. Mandaremus eram fore officia anim, varias expetendis singulis. De ullamco coniunctione. Esse ita singulis. Sed quae aute o fabulas...<a href="#">Skaityti toliau</a>
+                    </p>
+                </article>
+                <article class="pusiniu-straipsniu-konteineriai straipsnio-seselis">
+                    <h4  class="antraste">Septintas straipsnis</h4>
+                    <div class="straipsnio-nuotraukos-konteineris">
+                        <img src="images/Benediktas-Vanagas.jpg" class="nuotrauka" alt="Benediktas Vanagas">
+                    </div>
+                    <p class="straipsnis">
+                        Aliquip anim amet pariatur quorum. Doctrina nulla enim si tamen. Ex varias doctrina exercitation. Mandaremus eram fore officia anim, varias expetendis singulis. De ullamco coniunctione. Esse ita singulis. Sed quae aute o fabulas...<a href="#">Skaityti toliau</a>
+                    </p>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p>Visos teisės saugomos &#9400;</p>
+            <address>UAB "Mano puslapis" Pavyzdine g. 1, Kaunas. El.paštas <a href="mailto:j.jonaitis@pvz.lt">Jonaitis</a></address>
+        </footer>
+    </div>
+</body>
+</html>
