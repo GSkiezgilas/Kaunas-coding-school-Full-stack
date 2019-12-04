@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS5</title>
+</head>
+<body>
+
+    Name:<br>
+    <input type="text" id="name"><br>
+    Surname:<br>
+    <input type="text" id="surname"><br><br>
+    <button onclick="getNameAndSurname()">Submit</button>
+
+    <script type="text/javascript">
+        var name, surname;
+
+        function getNameAndSurname(name, surname) {
+            var name = document.getElementById('name').value;
+            var surname = document.getElementById('surname').value;
+            console.log(name + ' ' + surname + ' ' + 'ką tik prisijungė');
+//            return name + ' ' + surname + ' ' + 'ką tik prisijungė';
+        }
+
+//        function whoHasJoined () {
+//            console.log(getNameAndSurname());
+//        }
+            /* Jei reikalinga dvi funkcijos (viena gauti, kita išvesti) tai:
+            1. Užkomentuojam 22 eilutę
+            2. Atkomentuojam 23, 26-28 eilutes
+            3. Pakeičiam 14 eilutėj onclick="whoHasJoined()"
+            4. Išsaugom :) */
+    </script>
+</body>
+</html>
