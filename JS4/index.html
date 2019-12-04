@@ -6,8 +6,7 @@
     <title>JS4</title>
 </head>
 <body>
-    <button onclick="printResult();">Get result</button>
-    <p id="resultOfDivision"></p>
+    <button onclick="divisionResultToConsole();">Get result</button>
 
     <script type="text/javascript">
 
@@ -18,8 +17,8 @@
             return numberOne / numberTwo;
         }
 
-        function printResult () {
-            document.getElementById("resultOfDivision").innerHTML = numberOneAndNumberTwoDivision();
+        function divisionResultToConsole () {
+            console.log(numberOneAndNumberTwoDivision());
         }
     </script>
 </body>
