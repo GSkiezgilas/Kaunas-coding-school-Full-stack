@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS9</title>
+    <style>
+        .table-style {
+            width: 550px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="rooms-available"></div>
+    <script>
+        var viesbuciai = [
+            {
+            "name": "Radisson",
+            "Address": "Konstitucijos pr. 29",
+            "Rooms":[
+                {"Number":210, "GuestCount":2, "Price":100},
+                {"Number":211, "GuestCount":2, "Price":110},
+                {"Number":212, "GuestCount":2, "Price":109}
+            ]
+            },
+            {
+            "name": "Vilnius Inn",
+            "Address": "Šiaulių g. 3",
+            "Rooms":[
+                {"Number":11, "GuestCount":2, "Price":100},
+                {"Number":15, "GuestCount":1, "Price":58},
+                {"Number":22, "GuestCount":2, "Price":80},
+                {"Number":23, "GuestCount":2, "Price":99}
+            ]
+            }
+        ];
+        var text = '<h1>Viešbučiai (su laisvais kambariais)</h1>';
+
+        function availableRooms () {
+            for (var i = 0; i < viesbuciai.length; i++) {
+                text += '<h2>' + viesbuciai[i].name + '</h2>';
+                text += '<h3>' + viesbuciai[i].Address + '</h3>';
+                text += '<table class="table-style" border=1><tr><th>Kambario numeris</th><th>Žmonių skaičius</th><th>Kaina</th></tr>';
+                for (var j = 0; j < viesbuciai[i].Rooms.length; j++) {
+                    text += '<tr><td>' + viesbuciai[i].Rooms[j].Number + '</td>';
+                    text += '<td>' + viesbuciai[i].Rooms[j].GuestCount + '</td>';
+                    text += '<td>' + viesbuciai[i].Rooms[j].Price + ' &euro;' + '</td></tr>';
+                }
+                text += '</table>'
+
+                document.getElementById("rooms-available").innerHTML = text;
+            }
+        }
+        availableRooms ();
+    </script>
+
+</body>
+</html>
