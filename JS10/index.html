@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS10</title>
+</head>
+<body>
+
+    <script>
+        var objektas1 = {"id":1,"item":"Atsuktuvas","date":"2018","color":"geltona","price": "5"};
+        var objektas2 = {"id":2,"item":"Raktas","date":"2018","color":"pilka","price": "2"};
+        var objektuMasyvas = [objektas1, objektas2];
+
+            function tekstoIrasymasKonsoleje (x) {
+                for (var i=0; i < x.length; i++) {
+                    console.log('#' + x[i].id + ' \n');
+                    console.log('Prekė ' + x[i].item + ' \n');
+                    console.log('Pagaminimo data ' + x[i].date + ' \n');
+                    console.log('Spalva ' + x[i].color + ' \n');
+                    console.log('Kaina ' + x[i].price + ' \n\n');
+                }
+            }
+            tekstoIrasymasKonsoleje (objektuMasyvas);
+        /* Kad būtų identiškas tekstas su nuotrauka, reikėtų ištrynt 16 eilutę ir ranka perrašyt 17-21 plius dar dadėt objektui2, bet tada nesuprantu koks funkcijos tikslas jei viską rašyt ranka. */
+    </script>
+</body>
+</html>
